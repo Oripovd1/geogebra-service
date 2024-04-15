@@ -46,7 +46,7 @@ export class GGBPlotter {
       newPage.on('console', msg => console.log('PAGE LOG:', msg.text()));
       let url;
       if (this.poolOpts.ggb === 'local') {
-        const dir = path.resolve(__dirname, './geogebra-math-apps-bundle/Geogebra/HTML5/5.0/GeoGebra.html');
+        const dir = path.resolve(__dirname, '../../public/geogebra-math-apps-bundle/Geogebra/HTML5/5.0/GeoGebra.html');
         url = 'file://' + dir;
       } else {
         url = 'https://www.geogebra.org/classic';

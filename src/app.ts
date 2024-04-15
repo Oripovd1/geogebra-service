@@ -51,6 +51,7 @@ export class App {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(cookieParser());
+    this.app.use('/static', express.static('public'));
   }
 
   private initializeRoutes(routes: Routes[]) {
